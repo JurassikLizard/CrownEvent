@@ -1,0 +1,10 @@
+name: CrownEvent
+version: '${project.version}'
+main: me.jurassiklizard.crownevent.CrownEvent
+api-version: 1.17
+authors: [ JurassikLizard, TheNoble ]
+description: Runs the Crown Event on the Deathworld v2 server.
+commands:
+  kingcrown:
+    permission: crownevent.use
+    usage: "Usage: /<command> [start|stop]"

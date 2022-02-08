@@ -1,0 +1,27 @@
+crown:
+  spawn-radius: 2500
+  item-spawn-announcement: "The crown is at: %x% %y% %z% in the %dimension%" # %x% = x, %y% = y, %z%S = z, %dimension% = dimension
+  item-teleport-time-seconds: 300
+  player-location-cache-time-seconds: 60
+  void-y-height: -5
+  rewards-command: "say %player% should get a reward."
+  reward-time-in-hours: 1
+location-ping:
+  player-has-control: "%player% has control of the crown at %x% %y% %z% in %dimension%!"
+  no-player-has-control: "No-one has control of the crown, the crown is at %x% %y% %z% in %dimension%. Go get it!"
+  time-remaining: "There is %time% minutes left until crown location is revealed."
+  timer-start-time-in-hours: 32
+  deduction-time-increase-in-hours: 1
+player-drop-pickup-commands: # Without "/"
+  player-pickup-crown: "say %player% is now controlling the crown!" # %n% for new line
+  player-drop-crown: "say %player% has lost the crown!" # %n% for new line, %player% will use player name
+crown-item:
+  name: "Crown"
+  lore: "Can only be kept in inventory slots%n%Deathworld Item" # %n% for new line
+  material-name: DIAMOND_HELMET # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+  is-enchanted: true
+stored-position:
+  position-cache:
+stored-location-ping:
+  deduction-time: 0
+  timer-end-time:
